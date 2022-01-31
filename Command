@@ -1,0 +1,14 @@
+1. ansible install
+2. do passwordless connection using 
+   create new password
+   vim /etc/ssh/ssh_config
+        - Authen: yes  #uncomment
+        - paasword Authentication:  yes
+   go to
+   vim /etc/ansible/hosts
+        - add server ip
+3 check connection 
+  $ ansible [add_server_name] -m ping
+  
+ 
+        
